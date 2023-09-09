@@ -1,0 +1,9 @@
+version: 1.0
+app: Steel
+services:
+  - name: Steel
+    source: edgarrobles23/SteelSource.git # Ruta a tu código fuente
+    build: npm install
+    runtime: nodejs16.x # Otra versión de Node.js compatible si lo deseas
+    start_command: npm start # El comando para iniciar tu aplicación
+    port: 8080 # El puerto en el que tu aplicación escucha
